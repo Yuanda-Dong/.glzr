@@ -1,0 +1,60 @@
+.systray-container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 6px;
+  user-select: none;
+}
+
+.systray-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 20px; /* was 18px */
+  height: 20px; /* was 18px */
+  border-radius: 4px;
+  font-size: 13px;
+  color: inherit;
+  background: transparent;
+  border: none;
+}
+
+.systray-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.systray {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.systray.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.systray-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 20px; /* was 18px */
+  height: 20px; /* was 18px */
+  border-radius: 3px;
+}
+
+.systray-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.systray-icon {
+  width: 14px; /* was 12px */
+  height: 14px; /* was 12px */
+  object-fit: contain;
+  display: block;
+}

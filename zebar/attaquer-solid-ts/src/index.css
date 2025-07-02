@@ -1,3 +1,13 @@
+@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+
+
+@font-face {
+  font-family: "CaskaydiaMonoNerdFont Locally";
+  src: url("./fonts/CaskaydiaMonoNerdFont-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --text-size: 12px;
   --icon-size: 12px;
@@ -21,11 +31,23 @@
   align-items: center;
 }
 
+.left{
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+/* .center {
+  justify-self: center;
+} */
+
 #root {
   background: var(--background-color);
   color: var(--text-color);
+  font-family: "CaskaydiaMonoNerdFont Locally", ui-monospace, monospace;
   font-size: var(--text-size);
-  font-family: ui-monospace, monospace;
   overflow: hidden;
 }
 
@@ -43,4 +65,42 @@ div, span, p {
 html, body, #root {
   height: 100%;
   margin: 0;
+}
+
+.template {
+  display: flex;
+  align-items: center;
+}
+
+.logo,
+.binding-mode,
+.tiling-direction,
+.paused-button,
+.network,
+.memory,
+.cpu,
+.battery,
+.weather
+{
+  margin-right: 20px;
+}
+.binding-mode,
+.tiling-direction,
+.paused-button {
+  background: rgb(255 255 255 / 15%);
+  color: rgb(255 255 255 / 90%);
+  border-radius: 2px;
+  line-height: 1;
+  padding: 4px 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.cpu .high-usage {
+  color: #900029;
+}
+
+.launcher{
+  margin-right: 10px;
+  cursor: pointer;
 }

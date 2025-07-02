@@ -48,7 +48,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '34px'
+    top: '40px'
     right: '-1px'
     bottom: '0px'
     left: '-1px'
@@ -340,8 +340,8 @@ keybindings:
 
   - commands: ['shell-exec wt']
     bindings: ['alt+Enter']
-  - commands: ['shell-exec %LOCALAPPDATA%\FlowLauncher\Flow.Launcher.exe']
-    bindings: ['alt+a']
+  # - commands: ['shell-exec %LOCALAPPDATA%\FlowLauncher\Flow.Launcher.exe']
+  #   bindings: ['alt+a']
   - commands: ['set-title-bar-visibility shown']
     bindings: ['alt+t']
   - commands: ['set-title-bar-visibility hidden']

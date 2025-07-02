@@ -1,5 +1,5 @@
 import "./style.css";
-import { Component } from "solid-js";
+import { Component, For } from "solid-js";
 import { GlazeWmOutput } from "zebar";
 
 interface WorkspaceProps {
@@ -29,9 +29,9 @@ interface WorkspacesProps {
 const Workspaces: Component<WorkspacesProps> = (props) => {
   return (
     <div class="workspaces">
-      {props.glazewm?.currentWorkspaces.map((workspace) => (
-        <Workspace workspace={workspace} glazewm={props.glazewm} />
-      ))}
+      <For each={props.glazewm?.currentWorkspaces}>
+        {(workspace) => <Workspace workspace={workspace} glazewm={props.glazewm} />}
+      </For>
     </div>
   );
 };
