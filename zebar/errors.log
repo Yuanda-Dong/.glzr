@@ -1,0 +1,17 @@
+[2m2025-06-30T13:21:03.883963Z[0m [31mERROR[0m [2mzebar::sys_tray[0m[2m:[0m Error handling menu event: No widget pack found for 'iattaquer.attaquer'.
+[2m2025-07-01T12:08:21.176744Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m Failed to parse JSON from file: C:\Users\dongy\.glzr/zebar\settings.json
+
+Caused by:
+    expected value at line 4 column 5
+[2m2025-07-01T12:08:29.898279Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m Failed to parse JSON from file: C:\Users\dongy\.glzr/zebar\settings.json
+
+Caused by:
+    expected value at line 4 column 5
+[2m2025-07-01T12:08:34.014917Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m Failed to parse JSON from file: C:\Users\dongy\.glzr/zebar\settings.json
+
+Caused by:
+    expected value at line 4 column 5
+[2m2025-07-01T12:09:04.171466Z[0m [31mERROR[0m [2mzebar[0m[2m:[0m Failed to parse JSON from file: C:\Users\dongy\.glzr/zebar\settings.json
+
+Caused by:
+    missing field `pack` at line 5 column 5

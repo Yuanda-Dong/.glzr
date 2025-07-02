@@ -1,0 +1,46 @@
+:root {
+  --text-size: 12px;
+  --icon-size: 12px;
+  --text-color: rgba(255 255 255 / 95%);
+  --icon-color: rgba(115 130 175 / 95%);
+  --background-color: black
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 4px 1.5vw;
+}
+
+.left,
+.center,
+.right {
+  display: flex;
+  align-items: center;
+}
+
+#root {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--text-size);
+  font-family: ui-monospace, monospace;
+  overflow: hidden;
+}
+
+i {
+  color: var(--icon-color);
+  font-size: var(--icon-size);
+  margin-right: 7px;
+}
+
+div, span, p {
+  cursor: default;
+  user-select: none;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
