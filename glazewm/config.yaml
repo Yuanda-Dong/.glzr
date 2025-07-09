@@ -168,6 +168,7 @@ window_rules:
       # - window_process: { equals: 'buttery-taskbar' }
       - window_process: { equals: 'explorer' }
       - window_process: { equals: 'WinRAR' }
+      - window_process: { equals: 'CrestronXPanel' }
 
   - commands: ['set-floating']
     match:
@@ -281,8 +282,8 @@ keybindings:
   #   bindings: ['alt+a']
 
   # Focus the workspace that last had focus.
-  - commands: ['focus --recent-workspace']
-    bindings: ['alt+tab']
+  # - commands: ['focus --recent-workspace']
+  #   bindings: ['alt+tab']
 
   # Change focus to a workspace defined in `workspaces` config.
   - commands: ['focus --workspace 1']
